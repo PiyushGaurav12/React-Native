@@ -4,7 +4,7 @@ import { useNavigation } from '@react-navigation/native';
 
 const Categories = ({ categoryList }) => {
   const navigation=useNavigation();
-  console.log("Category List:", categoryList); // Log categoryList to verify data
+  // console.log("Category List:", categoryList); // Log categoryList to verify data
 
   return (
     <View style={styles.container}>
@@ -14,9 +14,9 @@ const Categories = ({ categoryList }) => {
         numColumns={4}
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => {
-          console.log("Item:", item); // Log individual items to verify data
+          // console.log("Item:", item); // Log individual items to verify data
           return (
-            <TouchableOpacity onPress={()=>navigation.navigate('item-list')} style={styles.itemContainer}>
+            <TouchableOpacity key={item.id} onPress={()=>navigation.navigate('item-list')} style={styles.itemContainer}>
               <Image 
                 source={{ uri: item.icon }}
                 style={styles.icon}

@@ -2,7 +2,7 @@ import { FlatList, Image, StyleSheet, View, Text } from 'react-native';
 import React from 'react';
 
 const Slider = ({ sliderList }) => {
-  console.log("Slider List in Slider Component:", sliderList);
+  // console.log("Slider List in Slider Component:", sliderList);
 
   return (
     <View style={styles.container}>

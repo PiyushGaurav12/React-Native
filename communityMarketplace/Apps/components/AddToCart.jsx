@@ -42,14 +42,16 @@ const AddToCart = () => {
   return (
     <SafeAreaView style={styles.maincontainer}>
       <View style={styles.header}>
-        <Text style={styles.title}>Add to Cart</Text>
+        <Text style={styles.title}>Your Cart</Text>
       </View>
+      <View >
       <FlatList
         data={cartItems}
         renderItem={renderItem}
         keyExtractor={(item, index) => index.toString()}
         numColumns={1} // Set the number of columns for grid layout
       />
+      </View>
     </SafeAreaView>
   );
 };
@@ -83,7 +85,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
   },
   image: {
-    width: '100%',
+    width: '80%',
     height: 160,
   },
   infoContainer: {

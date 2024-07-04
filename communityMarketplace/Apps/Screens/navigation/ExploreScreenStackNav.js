@@ -13,7 +13,7 @@ const ExploreScreenStackNav = () => {
   return (
     <Stack.Navigator>
         <Stack.Screen name='explore-tab' component={ExploreScreen}   options={{ headerShown: false }}/>
-        <Stack.Screen name='product-detail' component={ProductDetail} />
+        <Stack.Screen name='product-detail' component={ProductDetail} />  
     </Stack.Navigator>
   )
 }

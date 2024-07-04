@@ -6,7 +6,7 @@ import PostItem from "../components/PostItem";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Feather } from "@expo/vector-icons";
 
-const ExploreScreen = () => {
+const ExploreScreen = ({navigation}) => {
   const db = getFirestore(app);
   const [productList, setProductList] = useState([]);
   const [numColumns, setNumColumns] = useState(2); // State to manage the number of columns
@@ -36,9 +36,9 @@ const ExploreScreen = () => {
   };
 
   const renderItem = ({ item }) => (
-    // <TouchableOpacity onPress={() => navigation.navigate('product-detail', { productId: item.id })}>
+    <TouchableOpacity onPress={() => navigation.replace('product-detail', )}>
       <PostItem item={item} />
-    //  </TouchableOpacity>
+     </TouchableOpacity>
   );
 
   const renderHeader = () => (

@@ -120,7 +120,7 @@ const styles = StyleSheet.create({
     zIndex: 1,
   },
   detailsContainer: {
-    backgroundColor: "#f0f0f0",
+    backgroundColor: "#EDA5FA",
     padding: 10,
     borderRadius: 10,
   },
