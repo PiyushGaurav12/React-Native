@@ -11,7 +11,6 @@ import HomeScreen from "../Apps/Screens/HomeScreen";
 const StackNavigator = () => {
   const Stack = createNativeStackNavigator();
   return (
-    <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
           name="LandinScreen"
@@ -35,7 +34,6 @@ const StackNavigator = () => {
         />
         
       </Stack.Navigator>
-    </NavigationContainer>
   );
 };
 

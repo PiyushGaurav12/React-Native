@@ -3,11 +3,9 @@ import React from 'react';
 import { Ionicons } from "@expo/vector-icons";
 import { getFirestore, collection, addDoc } from 'firebase/firestore';
 import { app } from '../../firebaseConfig'; // Import your firebase configuration
-import { useNavigation } from '@react-navigation/native';
 
-const PostItem = ({ item, showHeartIcon = true }) => {
+const PostItem = ({ navigation, item, showHeartIcon = true }) => {
   const db = getFirestore(app);
-  const navigation = useNavigation();
 
   const addToWishlist = async (product) => {
     try {
@@ -59,7 +57,7 @@ const PostItem = ({ item, showHeartIcon = true }) => {
 
  
   const handleItemPress = () => {
-    navigation.navigate('ProductDetail', { product: item });
+    navigation.navigate('product-detail', { product: item });
   };
 
   return (

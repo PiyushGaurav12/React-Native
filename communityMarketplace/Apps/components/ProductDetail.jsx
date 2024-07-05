@@ -9,6 +9,6 @@ const ProductDetail = () => {
   )
 }
 
-export default ProductDetail
+export default ProductDetail;
 
 const styles = StyleSheet.create({})

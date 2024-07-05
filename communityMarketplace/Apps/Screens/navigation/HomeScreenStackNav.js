@@ -7,7 +7,6 @@ import ItemList from '../ItemList';
 const HomeScreenStackNav = () => {
     const Stack = createStackNavigator();
   return (
-    
     <Stack.Navigator>
     <Stack.Screen
       name="Home"

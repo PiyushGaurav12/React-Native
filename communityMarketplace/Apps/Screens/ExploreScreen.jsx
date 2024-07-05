@@ -36,8 +36,8 @@ const ExploreScreen = ({navigation}) => {
   };
 
   const renderItem = ({ item }) => (
-    <TouchableOpacity onPress={() => navigation.replace('product-detail', )}>
-      <PostItem item={item} />
+    <TouchableOpacity onPress={() => navigation.navigate('product-detail', )}>
+      <PostItem item={item} navigation={navigation} />
      </TouchableOpacity>
   );
 

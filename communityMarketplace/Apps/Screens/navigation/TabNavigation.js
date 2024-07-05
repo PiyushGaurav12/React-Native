@@ -17,7 +17,7 @@ import WishListStackNav from "./WishListStackNav";
 const Tab = createBottomTabNavigator();
 const TabNavigation = () => {
   return (
-    <NavigationContainer>
+
       <Tab.Navigator
         screenOptions={{
           headerShown: false,
@@ -98,7 +98,6 @@ const TabNavigation = () => {
         />
           
       </Tab.Navigator>
-    </NavigationContainer>
   );
 };
 
